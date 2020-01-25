@@ -3,9 +3,17 @@
   "main": "./lib/index.js",
   "preferGlobal": false,
   "description": "because I want create lot's of same markdowns,I create it.",
-  "version": "1.0",
+  "version": "0.1.0",
   "author": {
-    "name": "zhangxiaofan",
+    "name": "workkk",
     "email": "gentlebob1998@icloud.com"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/workINgithub/create_mds.git"
+  },
+  "keywords": [
+    "tools",
+    "markdowns"
+  ]
 }
