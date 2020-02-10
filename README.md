@@ -14,7 +14,21 @@ const CreateMds = require('./create_mds')
 const mds = new CreateMds(testPath)
 
 mds.writeFile(filename,content)
+
 ```
 
 你只需要三步,是不是很简单。完全支持写入一定数量的文件。
+
+新功能❗️
+生成大量的文件，通过文件数组的格式
+```
+let fileArray = [
+  {
+    filename : 'abcde',
+    content: 'aaaa'
+  }
+]
+mds.writeFiles(fileArray)
+
+```
 
