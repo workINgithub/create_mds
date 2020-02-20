@@ -1,6 +1,6 @@
 # CREATE_MDS
 
-> To faster create many markdowns
+> To faster create many markdowns, more than markdowns.
 
 introduction:
 原因：我在学习的过程中，每天写了一些电子日记。日记的格式大致相似。可每次都需要创建一个日记非常麻烦。倒不如创建一个模块，能快速的帮我创建这样的日记文件。
@@ -9,19 +9,13 @@ introduction:
 
 ### HOW TO USE
 ```
-const CreateMds = require('./create_mds')
-
-const mds = new CreateMds(testPath)
+const CreateMDs = require('./create_mds')
+// path可以是相对路径 也可以是 绝对路径
+const mds = new CreateMDs(path)
 
 mds.writeFile(filename,content)
 
-```
-
-你只需要三步,是不是很简单。完全支持写入一定数量的文件。
-
-新功能❗️
-生成大量的文件，通过文件数组的格式
-```
+// 写入大量文件
 let fileArray = [
   {
     filename : 'abcde',
@@ -31,4 +25,18 @@ let fileArray = [
 mds.writeFiles(fileArray)
 
 ```
+
+#### 新功能
+
+```
+mds.set(suffix)
+mds.get()
+```
+
+设置新增文件的后缀名。
+
+
+#### 问题修复
+
+v0.4.0  fix:IO问题，仓库若未建立，无法使用writeFile() , 模块化处理write , feat: 增加suffix修改文件后缀的功能
 
