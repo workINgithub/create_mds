@@ -38,5 +38,6 @@ mds.get()
 
 #### 问题修复
 
-v0.4.0  fix:IO问题，仓库若未建立，无法使用writeFile() , 模块化处理write , feat: 增加suffix修改文件后缀的功能
+v0.3.2 docs: 版本号 问题
+v0.3.1 fix:IO问题，仓库若未建立，无法使用writeFile() , 模块化处理write , feat: 增加suffix修改文件后缀的功能
 
